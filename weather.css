@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease;
+}
+
+body {
+  width: 100%;
+  background-color: blue;
+  overflow: hidden;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+#image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+#upper {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  padding: 25px 25px;
+}
+
+#icon {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 5px;
+}
+.lower-side {
+  height: 40vh;
+  width: 100%;
+}
+#title {
+  text-align: center;
+  transform: translateY(-170%);
+  overflow-y: hidden;
+  animation: SlideDown 1.3s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes SlideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.left-content {
+  display: flex;
+  padding: 20px 20px;
+  flex-direction: column;
+  width: 50%;
+  transform: translateX(-100%);
+  animation: SlideLeft 1.5s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes SlideLeft {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.right-content {
+  padding: 25px;
+  margin-right: 20px;
+  transform: translateX(100%);
+  animation: SlideRight 1.7s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes SlideRight {
+  to {
+    transform: translateX(0);
+  }
+}
+
+#atmosphere {
+  font-size: 35px;
+}
+
+#temp {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cities {
+  font-size: 15px;
+  font-weight: 300;
+  width: 45%;
+  height: 25px;
+  outline: none;
+  background: none;
+  border-radius: 5px;
+  color: black;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+#locate {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#cities::placeholder {
+  color: black;
+  background: none;
+}
+#cities:focus {
+  outline: none;
+  background: transparent;
+}
+
+#cities:invalid {
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        id="image"
+        src="https://images.unsplash.com/photo-1601134467661-3d775b999c8b?q=80&w=1675&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      />
+      <div class="main">
+        <h1 id="title">Weather App</h1>
+        <div id="upper">
+          <div class="left-content">
+            <img
+              id="icon"
+              src="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/icons/Business/cloud-line.svg"
+            />
+            <span id="atmosphere"></span>
+
+            <input
+              type="text"
+              placeholder="enter your city name"
+              id="cities"
+              value="Delhi"
+              spellcheck="false"
+            />
+
+            <h1 id="temp">temp</h1>
+            <span id="locate">location</span>
+          </div>
+          <div class="right-content">
+            <spna class="left-value">
+              <h5>Humidity</h5>
+              <h2 id="humid"></h2>
+            </spna>
+            <span class="left-value"
+              ><h5>Air pressure</h5>
+              <h2 id="pressure">Value</h2></span
+            >
+            <span class="left-value"
+              ><h5>chances of rain</h5>
+              <h2 id="rainchances">value of chances</h2></span
+            >
+            <span class="left-value"
+              ><h5>Wind Speed</h5>
+              <h2 id="speed">Value</h2></span
+            >
+          </div>
+        </div>
+
+        <div class="lower-side"></div>
+      </div>
+    </div>
+
+    <script src="wather.js"></script>
+  </body>
+</html>
